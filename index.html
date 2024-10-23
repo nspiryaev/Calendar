@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Календарь</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="calendar container">
+      <div class="calendar__options">
+        <ul class="calendar__options-list">
+          <li class="calendar__options-item" data-period="today">Сегодня</li>
+          <li class="calendar__options-item" data-period="yesterday">Вчера</li>
+          <li class="calendar__options-item" data-period="week">
+            Последние 7 дней
+          </li>
+          <li class="calendar__options-item" data-period="month">
+            Последние 30 дней
+          </li>
+          <li class="calendar__options-item" data-period="threeMonth">
+            Последние 90 дней
+          </li>
+          <li class="calendar__options-item" data-period="beginningOfWork">
+            От начала работы
+          </li>
+        </ul>
+
+        <button type="button" class="calendar__button calendar__button--apply">
+          Применить
+        </button>
+        <button type="button" class="calendar__button calendar__button--cancel">
+          Отменить
+        </button>
+      </div>
+
+      <div class="calendar__table">
+        <div class="calendar__arrows">
+          <button type="button" class="calendar__arrow calendar__arrow--prev">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_6_861"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+              >
+                <rect width="20" height="20" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_6_861)">
+                <path
+                  d="M16.287 5.41998L9.7585 11.8935L9.65108 12L9.7585 12.1065L16.287 18.58L15.0679 19.7887L7.21303 12L15.0679 4.21123L16.287 5.41998Z"
+                  fill="#747474"
+                  stroke="white"
+                  stroke-width="0.3"
+                />
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="calendar__arrow calendar__arrow--next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_1_4122"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+              >
+                <rect width="20" height="20" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_1_4122)">
+                <path
+                  d="M7.21303 5.42L13.7415 11.8935L13.8489 12L13.7415 12.1065L7.21304 18.58L8.43206 19.7888L16.287 12L8.43206 4.21124L7.21303 5.42Z"
+                  fill="#747474"
+                  stroke="white"
+                  stroke-width="0.3"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/class/Calendar.js"></script>
+    <script src="./js/class/Month.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
